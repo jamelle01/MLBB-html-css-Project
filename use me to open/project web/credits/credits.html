@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credits</title>
+    <link rel="icon" href="/project web/pictures/icon.png">
+    <link rel="stylesheet" href="credits.css">
+</head>
+<body>
+    <div class="logo" id="logo">
+        <a href="/project web/home page/home.html"><img src="/project web/pictures/mllogo.png" alt=""></a>
+        <a href="/project web/mobile legends/mlbb.html">Mobile Legends</a>
+        <a href="/project web/how to play/how to play.html" >How To Play</a>
+        <a href="/project web/heroes/heroesall.html">Heroes</a>
+        <a href="/project web/credits/credits.html" style=" text-shadow: 0 0 1.5vw; transform: scale(1.1); filter: brightness(1.1);">Credits<hr></a>
+    </div>
+    <div class="container">
+        <h1 class="title midterm">MIDTERM PROJECT</h1>
+    </div>
+    <div class="container">
+        <h2 class="title">Subject:</h2>
+        <h3 class="subject">Pof Elec 2 - Web System and Technology</h3>
+    </div>
+    <div class="container">
+        <h2 class="title">Team 7</h2>
+        <h3 class="wbs">Topic:</h3>
+        <div class="name">
+            <img class="name_1" src="/project web/pictures/icon.png" alt="">
+            <p class="name_1" >Mobile Legends Bang Bang</p>
+        </div>
+        <h3 class="wbs">Leader:</h3>
+            <div class="name">
+                <img class="name_1" src="tatad.jpg" alt="">
+                <p class="name_1" >Jeramelle Tatad</p>
+            </div>
+        <h3 class="wbs">Members:</h3>
+            <div class="name">
+                <img class="name_1" src="chatto.jpg" alt="">
+                <p class="name_1" >Andrie Chatto</p>
+            </div>
+            <div class="name">
+                <img class="name_1" src="junaldo.jpg" alt="">
+                <p class="name_1" >John Morris Junaldo</p>
+            </div>
+    </div>
+    <div class="container">
+        <h2 class="title">Instructor:</h2>
+        <div class="name instructor">
+            <img src="instructor.jpg" alt="">
+            <p>Engr. Eduardo Carpio</p>
+        </div>
+
+    </div>
+    <div class="container">
+        <h2 class="title">References:</h2>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Mobile_Legends:_Bang_Bang">https://en.wikipedia.org/wiki/Mobile_Legends:_Bang_Bang</a></li>
+            <li><a href="https://www.wikihow.com/Play-Mobile-Legends:-Bang-Bang">https://www.wikihow.com/Play-Mobile-Legends:-Bang-Bang</a></li>
+            <li><a href="https://mobile-legends.fandom.com/wiki/Mobile_Legends:_Bang_Bang_Wiki">https://mobile-legends.fandom.com/wiki/Mobile_Legends:_Bang_Bang_Wiki</a></li>
+        </ul>
+    </div>
+    <script>
+        var mybutton = document.getElementById("logo");
+    
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            mybutton.style.backgroundColor = "rgba(0, 0, 0, 0.87)";
+        } else {
+            mybutton.style.backgroundColor = "";
+        }
+        }
+    </script>
+</body>
+</html>

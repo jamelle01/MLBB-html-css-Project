@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1.5vw;
+    font-family: Helvetica, sans-serif;
+    /* background:linear-gradient(90deg,hsla(180, 100%, 50%, 0.274),hsla(180, 100%, 50%, 0.034),rgba(0, 0, 255, 0),hsla(180, 100%, 50%, 0.034),hsla(180, 100%, 50%, 0.270)), url("/project web/pictures/picking bg.jpg"); */
+    background: linear-gradient(90deg,hsla(180, 100%, 50%, 0.274),hsla(180, 100%, 50%, 0.144),rgba(0, 0, 255, 0),hsla(180, 100%, 50%, 0.034),hsla(180, 100%, 50%, 0.270)), url("/project web/hero individual/artur.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+h1{
+    margin: 0;
+    text-align: center;
+    color: rgb(247, 194, 97);
+    margin-bottom: 3vw;
+    text-shadow: 3px 3px rgba(245, 222, 179, 0.349);
+}
+.content{
+    animation: slideup 1s;
+    width: 50vw;
+    text-align: left;
+    margin: 6vw auto;
+    background-color: rgba(0, 0, 0, 0.438);
+    padding: 3vw;
+    color: white;
+    border-radius: 1vw;
+    line-height: 1.4em;
+}
+.logo img{
+    width: 12vw;
+    height: auto;
+}
+.logo{
+    height: 11%;
+    position: fixed;
+    top: 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    column-gap: 3vw;
+    
+}
+.logo a{
+    text-decoration: none;
+    filter:brightness(.9);
+    color: rgb(255, 255, 255);
+    display: grid;
+    align-content: center;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
+.logo img:hover, .logo a:hover{
+    transition: .2s;
+    filter:brightness(1.1);
+    transform: scale(1.1);
+    color: white;
+}
+.logo hr{
+    height: .2vw;
+    border-radius: 50px;
+    color:  rgb(255, 182, 45);
+    background-color: rgb(255, 182, 45);
+}
+@keyframes slideup{
+    from {
+        margin-top: 80vw;
+    }
+}

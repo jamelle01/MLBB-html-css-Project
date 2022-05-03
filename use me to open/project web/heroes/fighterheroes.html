@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes | MLBB</title>
+    <link rel="icon" href="/project web/pictures/icon.png">    <link rel="stylesheet" href="heroes.css">
+</head>
+<body>
+    <div class="logo" id="logo">
+        <a href="/project web/home page/home.html"><img src="/project web/pictures/mllogo.png" alt=""></a>
+        <a href="/project web/mobile legends/mlbb.html">Mobile Legends</a>
+        <a href="/project web/how to play/how to play.html" >How To Play</a>
+        <a href="/project web/heroes/heroesall.html" style=" text-shadow: 0 0 1.5vw whitesmoke; transform: scale(1.1); filter: brightness(1.1);">Heroes<hr></a>
+        <a href="/project web/credits/credits.html">Credits</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/project web/heroes/heroesall.html" class="all">All</a></li>
+            <li><a href="/project web/heroes/tankheroes.html" class="tank">Tank</a></li>
+            <li><a href="/project web/heroes/fighterheroes.html" class="fighter"  style="border:none;transform:scale(1.1); background-color: rgba(0, 255, 255, 0.671);font-weight: bolder;">Fighter</a></li>
+            <li><a href="/project web/heroes/assassinheroes.html" class="assassin">Assassin</a></li>
+            <li><a href="/project web/heroes/mageheroes.html" class="mage">Mage</a></li>
+            <li><a href="/project web/heroes/marksmanheroes.html" class="marksman">Marksman</a></li>
+            <li><a href="/project web/heroes/supportheroes.html" class="support">Support</a></li>
+        </ul>
+        
+    </nav>  
+    <div class="heroes">
+        <a href="/project web/hero individual/sorts/fighters/aldous/aldous.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/aldous.webp');" id="aldous" >
+                <span> <img src="/project web/hero individual/fighter.webp" title="Fighter" alt="" class="role"> Aldous</span>
+            </div>
+        </a>
+        <a href="/project web/hero individual/sorts/fighters/alpha/alpha.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/alpha.png');" id="alpha">
+                <span> <img src="/project web/hero individual/fighter.webp" title="Fighter" alt="" class="role"> Alpha</span>
+            </div>
+        </a>
+        <a href="/project web/hero individual/sorts/fighters/alucard/alucard.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/alucard.jpg');" id="alucard">
+                <span> <img src="/project web/hero individual/fighter.webp" alt="" title="Fighter" class="role"><span class="icon-border">|</span><img title="Assassin" src="/project web/hero individual/assassin.webp" class="role" alt=""> Alucard</span>
+            </div>
+        </a>
+        <a href="/project web/hero individual/sorts/fighters/argus/argus.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/argus.jpg');" id="argus">
+                <span> <img src="/project web/hero individual/fighter.webp" alt="" title="Fighter" class="role"> Argus</span>
+            </div>
+        </a>
+        <a href="/project web/hero individual/sorts/fighters/badang/badang.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/badang.png');" id="aamon">
+                <span> <img src="/project web/hero individual/fighter.webp" title="Fighter" alt="" class="role"> Badang</span>
+            </div>
+        </a>
+        <a href="/project web/hero individual/sorts/fighters/bane/bane.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/bane.webp');" id="bane">
+                <span> <img loading="lazy" src="/project web/hero individual/fighter.webp" alt="" title="Fighter" class="role"><span class="icon-border">|</span><img title="Support" src="/project web/hero individual/mage.webp" class="role" alt=""> Bane</span>
+            </div>
+        </a>
+        <a href="/project web/hero individual/sorts/fighters/gatotkaca/gatotkaca.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/gatotkaca.jpg');" id="gatotkaca" >
+                <span> <img src="/project web/hero individual/tank.webp" alt="" title="Tank" class="role"><span class="icon-border">|</span><img src="/project web/hero individual/fighter.webp" title="Fighter" class="role" alt=""> Gatotkaca</span>
+            </div>
+        </a>
+    </div>
+    <script>
+        var mybutton = document.getElementById("logo");
+    
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            mybutton.style.backgroundColor = "rgba(0, 0, 0, 0.87)";
+        } else {
+            mybutton.style.backgroundColor = "";
+        }
+        }
+    </script>
+</body>
+</html>

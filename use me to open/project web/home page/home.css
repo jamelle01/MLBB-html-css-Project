@@ -1,0 +1,57 @@
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+@keyframes slidedown{
+    from{
+        margin: 100px auto;
+        opacity: 0;
+    }
+}
+body{
+    background:linear-gradient(90deg,hsla(180, 100%, 50%, 0.274),hsla(180, 100%, 50%, 0.034),rgba(0, 0, 255, 0),hsla(180, 100%, 50%, 0.034),hsla(180, 100%, 50%, 0.270)), url("/project web/pictures/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+div{
+    margin-top: 12vw;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: slidedown;
+    animation-duration: .8s;
+}
+a{
+    text-align: center;
+    margin: 1vw auto;
+    border: .3vw solid rgb(221, 221, 221);
+    border-radius: 50px ;
+    background-color:rgba(0, 175, 175, 0.664);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    font-weight: bold;
+    display: block;
+    object-fit: contain;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    padding: 1vw 0;
+}
+header img{
+    width: 20vw;
+    height: auto;
+}
+header{
+    position: fixed;
+    bottom:5%;
+    left: 2%;
+    z-index: 1;
+}       
+a:hover{
+    color: white;
+    border-color: white;
+    transform: scale(1.08);
+    box-shadow: 0px 0px 1vw aqua; 
+    transition: .2s;
+}

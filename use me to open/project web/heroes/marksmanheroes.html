@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes | MLBB</title>
+    <link rel="icon" href="/project web/pictures/icon.png">    <link rel="stylesheet" href="heroes.css">
+</head>
+<body>
+    <div class="logo" id="logo">
+        <a href="/project web/home page/home.html"><img src="/project web/pictures/mllogo.png" alt=""></a>
+        <a href="/project web/mobile legends/mlbb.html">Mobile Legends</a>
+        <a href="/project web/how to play/how to play.html" >How To Play</a>
+        <a href="/project web/heroes/heroesall.html" style=" text-shadow: 0 0 1.5vw whitesmoke; transform: scale(1.1); filter: brightness(1.1);">Heroes<hr></a>
+        <a href="/project web/credits/credits.html">Credits</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/project web/heroes/heroesall.html" class="all" >All</a></li>
+            <li><a href="/project web/heroes/tankheroes.html" class="tank">Tank</a></li>
+            <li><a href="/project web/heroes/fighterheroes.html" class="fighter">Fighter</a></li>
+            <li><a href="/project web/heroes/assassinheroes.html" class="assassin">Assassin</a></li>
+            <li><a href="/project web/heroes/mageheroes.html" class="mage">Mage</a></li>
+            <li><a href="/project web/heroes/marksmanheroes.html" class="marksman"  style="border:none;transform:scale(1.1); background-color: rgba(0, 255, 255, 0.671);font-weight: bolder;">Marksman</a></li>
+            <li><a href="/project web/heroes/supportheroes.html" class="support">Support</a></li>
+        </ul>
+        
+    </nav>  
+    <div class="heroes">
+        <a href="/project web/hero individual/sorts/marksman/beatrix/beatrix.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/beatrix.webp');" id="beatrix" >
+                <span> <img src="/project web/hero individual/marksman.webp" alt="" title="Marksman" class="role"> Beatrix</span>
+            </div>
+        </a>
+        <a href="/project web/hero individual/sorts/marksman/brody/brody.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/brody.webp');" id="brody" >
+                <span> <img src="/project web/hero individual/marksman.webp" alt="" title="Marksman" class="role"> Brody </span>
+            </div>
+        </a>
+        <a href="/project web/hero individual/sorts/marksman/bruno/bruno.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/bruno.webp'); background-position-x: 50%;" id="bruno" >
+                <span> <img src="/project web/hero individual/marksman.webp" title="Marksman" alt="" class="role"> Bruno</span>
+            </div>
+        </a>
+        <a href="/project web/hero individual/sorts/marksman/claude/claude.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/claude.webp');" id="claude" >
+                <span> <img src="/project web/hero individual/marksman.webp" alt="" title="Marksman" class="role"> Claude</span>
+            </div>
+        </a>
+        <a href="/project web/hero individual/sorts/marksman/clint/clint.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/clint.jpg');" id="clint" >
+                <span> <img src="/project web/hero individual/marksman.webp" alt="" title="Marksman" class="role"> Clint</span>
+            </div>
+        </a>
+    </div>
+    <script>
+        var mybutton = document.getElementById("hiddenlogo");
+    
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+    </script>
+</body>
+</html>

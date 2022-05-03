@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carmilla | MLBB</title>
+    <link rel="icon" href="/project web/pictures/icon.png">    <link rel="stylesheet" href="/project web/hero individual/style.css">
+</head>
+<body>
+    <div class="arrow">
+        <a href="/project web/heroes/heroesall.html">
+            <img id="back"  title="back" src="/project web/pictures/back.png" alt="">
+        </a>
+    </div>
+    <div class="logo">
+        <a href="/project web/home page/home.html">
+            <img src="/project web/pictures/mllogo.png" alt="">
+        </a>
+        
+    </div>
+    <div class="container">
+        <div class="heroInfo">
+            <div class="name">
+                <img src="/project web/hero individual/support.webp" alt="">
+                <h1>Carmilla</h1>
+            </div>
+            <hr>
+            <p>Support</p>
+            <p>Crowd Control | Damage</p>
+            <div class="stats">
+                <h4>Durability</h4>
+                <progress id="meter" value="60" max="100"></progress>
+                <h4>Offense</h4>
+                <progress id="meter" value="50" max="100"></progress>
+                <h4>Skill Effects</h4>
+                <progress id="meter" value="80" max="100"></progress>
+                <h4>Difficulty</h4>
+                <progress id="meter" value="50" max="100"></progress>
+            </div>
+        </div>
+        <div class="hero" style="background-image: url(hero.avif);">
+            <div class="next">
+                <p><a href="/project web/hero individual/bruno/bruno.html" class="backward" title="previous" ><</a><a href="/project web/hero individual/cecilion/cecilion.html" title="next" class="forward">></a></p>
+            </div>
+        </div>
+        <div class="skills">
+            <img src="passive.webp" alt="passive" class="skill passive">
+            <div class="passDes">
+                <td style="background:linear-gradient(to bottom, #3b5999 0px, transparent 50px); vertical-align:top;"><div><b style="font-size:120%; color:white;">Vampire Pact</b></div><div><span style="background-color:#00bffe; color:white; padding:0px 10px 0px 10px;">BUFF</span>&nbsp;<span style="background-color:#ff4500; color:white; padding:0px 10px 0px 10px">Debuff</span></div><hr>Carmilla steals 6-12 <a href="/wiki/Physical_Defense" class="mw-redirect" title="Physical Defense"><span style="color:">Physical</span></a> &amp; <a href="/wiki/Magic_Defense" class="mw-redirect" title="Magic Defense"><span style="color:">Magic Defense</span></a> (scales with level) from enemy heroes while dealing damage to them. Each target's defense can be stolen only once in 5 seconds. The stolen <a href="/wiki/Physical_Defense" class="mw-redirect" title="Physical Defense"><span style="color:">Physical</span></a> &amp; <a href="/wiki/Magic_Defense" class="mw-redirect" title="Magic Defense"><span style="color:">Magic Defense</span></a> can be stacked up to 5 times. Lasts for 5 seconds.<table class="wikitable mw-collapsible mw-collapsed mw-made-collapsible" style="margin:auto;" width="100%;"><tbody><tr style="display: none;"><td style="text-align:right;" width="20%;"><a href="/wiki/Physical_Defense" class="mw-redirect" title="Physical Defense">Physical Defense</a></td><td width="80%;">Deduction of Physical Damage taken. Physical Defense will be affected by the enemy’s Physical PEN but not lower than 0.<br><small><i> Actual Physical Damage taken = Physical Damage dealt by enemy 120/(120 + Physical Defense).</i><br>Physical Defense will be affected by the enemy's Physical PEN, but will not be lower than -60.</small></td></tr><tr style="display: none;"><td style="text-align:right;" width="20%;"><a href="/wiki/Magic_Defense" class="mw-redirect" title="Magic Defense">Magic Defense</a></td><td width="80%;">Reduces Magic Damage taken.<br><small><i>Actual Magic Damage taken = Magic Damage dealt by enemy 120/(120 + Magic Defense).<br>Magic Defense will be affected by the enemy's Magic PEN, but will not be lower than -60.</i></small></td></tr>
+</tbody></table></td>
+                <p class="skillname">Passive</p>
+            </div>
+            <img src="1st.webp" alt="1st" class="skill stskill">
+            <div class="stDes">
+                <td style="background:linear-gradient(to bottom, #3b5999 0px, transparent 50px); vertical-align:top;"><div><b style="font-size:120%; color:white;">Crimson Flower</b></div><div><span style="background-color:#fea500; color:white; padding:0px 10px 0px 10px;">Damage</span>&nbsp;<span style="background-color:#43bc3b; color:white; padding:0px 10px 0px 10px">HEAL</span> | <a href="/wiki/Magic_Skill" class="mw-redirect" title="Magic Skill">Magic Skill</a></div><hr>Carmilla summons 2 Crimson Flowers circling around herself for 5 seconds.<br>When Crimson Flowers hit an enemy, they increase spinning speed, deal 100–200 <a href="/wiki/Magic_Power" class="mw-redirect" title="Magic Power"><span style="color:#00ffff">(+50% Total Magic Power)</span></a> <a href="/wiki/Magic_Damage" class="mw-redirect" title="Magic Damage"><span style="color:#d640fa">Magic Damage</span></a> to the target and <a href="/wiki/Slow" class="mw-redirect" title="Slow"><span style="color:">slow</span></a> it by 10% for 0.8 second (slow effect stacks up to 50%).<br>Each time the Crimson Flowers deal damage to enemies, Carmilla will restore 75–150 <a href="/wiki/Magic_Power" class="mw-redirect" title="Magic Power"><span style="color:#00ffff">(+35% Total Magic Power)</span></a> <a href="/wiki/HP" class="mw-redirect" title="HP"><span style="color:limegreen">HP</span></a> (only heals <a href="/wiki/Heal" class="mw-redirect" title="Heal"><span style="color:limegreen">30%</span></a> of this amount on minion hit).<table class="wikitable mw-collapsible mw-collapsed mw-made-collapsible" style="margin:auto;" width="100%;"><tbody><tr style="display: none;"><td style="text-align:right;" width="20%;"><a href="/wiki/Magic_Skill" class="mw-redirect" title="Magic Skill">Magic Skill</a></td><td width="80%;">Deal Magic DMG to enemies. Doesn't trigger Physical Lifesteal, but triggers Magic Lifesteal and Spell Vamp (combined).</td></tr><tr style="display: none;"><td style="text-align:right;" width="20%;"><a href="/wiki/Movement_Speed" class="mw-redirect" title="Movement Speed">Movement Speed</a></td><td width="80%;">Movement Speed on the battlefield. Usually Calculated and Actual Movement Speed is equal. But when Movement Speed is below 230 or over 420 both Slowdown and Speedup Effect will decay.<br><small><i>Calculated Movement Speed = Basic Movement Speed × (100% + All Speedup Effect% - All Slowdown Effect%).</i></small></td></tr><tr style="display: none;"><td style="text-align:right;" width="20%;"><a href="/wiki/Regen_Effect" class="mw-redirect" title="Regen Effect">Regen Effect</a></td><td width="80%;">Attribute that affects the actual HP Regen and Shield. The default ratio is 100%.<br><small><i>Actual HP Regen/Shield = Original HP Regen/Shield × (100% + All Regen Effects Increase% - All Regen Effects Decrease%).</i></small></td></tr>
+</tbody></table></td>
+                <p class="skillname">Skill 1</p>
+            </div>
+            <img src="2nd.webp" alt="2nd" class="skill ndskill">
+            <div class="ndDes">
+                <td style="background:linear-gradient(to bottom, #3b5999 0px, transparent 50px); vertical-align:top;"><div><b style="font-size:120%; color:white;">Bloodbath</b></div><div><span style="background-color:#00bffe; color:white; padding:0px 10px 0px 10px;">Speed Up</span>&nbsp;<span style="background-color:#ff4500; color:white; padding:0px 10px 0px 10px">CC</span> | <a href="/wiki/Magic_Skill" class="mw-redirect" title="Magic Skill">Magic Skill</a></div><hr>Carmilla accumulates <span class="new" title="Skill (page does not exist)" data-uncrawlable-url="L3dpa2kvU2tpbGw/YWN0aW9uPWVkaXQmcmVkbGluaz0x"><span style="color:#a2a2d0">Bloodbath Energy</span></span>, greatly increasing her <a href="/wiki/Movement_Speed" class="mw-redirect" title="Movement Speed"><span style="color:">Movement Speed</span></a> by 70% (decreases rapidly in 4.5 seconds).<br><span class="new" title="E (page does not exist)" data-uncrawlable-url="L3dpa2kvRT9hY3Rpb249ZWRpdCZyZWRsaW5rPTE="><span style="color:#a2a2d0">Use Again</span></span>: Carmilla casts Bloodbath Energy to a designated enemy (can't target at the minion), dealing 150–300 <a href="/wiki/Magic_Power" class="mw-redirect" title="Magic Power"><span style="color:#00ffff">(+120% Total Magic Power)</span></a> <a href="/wiki/Magic_Damage" class="mw-redirect" title="Magic Damage"><span style="color:#d640fa">Magic Damage</span></a> and <a href="/wiki/Cc" class="mw-redirect" title="Cc"><span style="color:">stunning</span></a> the enemy for 0.6 seconds.<br>The <a href="/wiki/Md" class="mw-redirect" title="Md"><span style="color:#d640fa">damage</span></a> and the <a href="/wiki/Cc" class="mw-redirect" title="Cc"><span style="color:">stunning</span></a> duration scale with the Bloodbath Energy accumulation, capped at 100%.<table class="wikitable mw-collapsible mw-collapsed mw-made-collapsible" style="margin:auto;" width="100%;"><tbody><tr style="display: none;"><td style="text-align:right;" width="20%;"><a href="/wiki/Movement_Speed" class="mw-redirect" title="Movement Speed">Movement Speed</a></td><td width="80%;">Movement Speed on the battlefield. Usually Calculated and Actual Movement Speed is equal. But when Movement Speed is below 230 or over 420 both Slowdown and Speedup Effect will decay.<br><small><i>Calculated Movement Speed = Basic Movement Speed × (100% + All Speedup Effect% - All Slowdown Effect%).</i></small></td></tr><tr style="display: none;"><td style="text-align:right;" width="20%;"><a href="/wiki/Stunned" title="Stunned">Stunned</a></td><td width="80%;">A state that prevents a target from moving, attacking, or using skills.</td></tr><tr style="display: none;"><td style="text-align:right;" width="20%;"><a href="/wiki/Magic_Skill" class="mw-redirect" title="Magic Skill">Magic Skill</a></td><td width="80%;">Deal Magic DMG to enemies. Doesn't trigger Physical Lifesteal, but triggers Magic Lifesteal and Spell Vamp (combined).</td></tr>
+</tbody></table></td>
+                <p class="skillname">Skill 2</p>
+            </div>
+            <img src="3rd.webp" alt="3rd" class="skill rdskill">
+            <div class="rdDes">
+                <td style="background:linear-gradient(to bottom, #3b5999 0px, transparent 50px); vertical-align:top;"><div><b style="font-size:120%; color:white;">Curse of Blood</b></div><div><span style="background-color:#ff4500; color:white; padding:0px 10px 0px 10px;">CC</span> | <a href="/wiki/Magic_Skill" class="mw-redirect" title="Magic Skill">Magic Skill</a></div><hr>Carmilla casts Curse of Blood at a designated enemy hero. The Curse will spread out from the enemy hit to nearby enemy heroes, dealing 275–525 <a href="/wiki/Magic_Power" class="mw-redirect" title="Magic Power"><span style="color:#00ffff">(+160% Total Magic Power)</span></a> <a href="/wiki/Magic_Damage" class="mw-redirect" title="Magic Damage"><span style="color:#d640fa">Magic Damage</span></a> and <a href="/wiki/Slowing" class="mw-redirect" title="Slowing"><span style="color:">slowing</span></a> them by 80% for 5 seconds. (The slow effect will decay rapidly to 20% in 2 seconds.)<br>The curse can be inflicted to up to 3 targets at the same time. As long as one target with the Curse of Blood is damaged or controlled, the other influenced targets will also receive <a href="/wiki/Damage" title="Damage"><span style="color:#a2a2d0">damage</span></a> and <a href="/wiki/Cc" class="mw-redirect" title="Cc"><span style="color:">control effects</span></a>. (Damage decreases to <a href="/wiki/Damage" title="Damage"><span style="color:#a2a2d0">70%</span></a>, and control duration decreases to 70%.)<table class="wikitable mw-collapsible mw-collapsed mw-made-collapsible" style="margin:auto;" width="100%;"><tbody><tr style="display: none;"><td style="text-align:right;" width="20%;"><a href="/wiki/Movement_Speed" class="mw-redirect" title="Movement Speed">Movement Speed</a></td><td width="80%;">Movement Speed on the battlefield. Usually Calculated and Actual Movement Speed is equal. But when Movement Speed is below 230 or over 420 both Slowdown and Speedup Effect will decay.<br><small><i>Calculated Movement Speed = Basic Movement Speed × (100% + All Speedup Effect% - All Slowdown Effect%).</i></small></td></tr><tr style="display: none;"><td style="text-align:right;" width="20%;"><a href="/wiki/Magic_Skill" class="mw-redirect" title="Magic Skill">Magic Skill</a></td><td width="80%;">Deal Magic DMG to enemies. Doesn't trigger Physical Lifesteal, but triggers Magic Lifesteal and Spell Vamp (combined).</td></tr>
+</tbody></table></td>
+                <p class="skillname">Skill 3</p>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

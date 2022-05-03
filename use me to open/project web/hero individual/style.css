@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes slideright{
+    from {
+        position: relative;
+        left: -50px;
+        opacity: 0;
+    }
+    to {
+        position: relative;
+        left: 0px;}
+}
+@keyframes slideright-logo{
+    from {
+        position: absolute;
+        bottom:5%;
+        left: -10%;
+        opacity: 0;
+    }
+    to {
+        position: absolute;
+        bottom:5%;
+        left: 2%;
+    }
+}
+@keyframes slideleft{
+    from{
+        position: relative;
+        right: -50px;
+        opacity: 0;
+    }
+    to{
+        position: relative;
+        right: 0px;
+        opacity: 1;
+    }
+}
+@keyframes showIn{
+    from{opacity: 0;}
+}
+@keyframes barAnimation{
+    from{
+        width: 0;
+    }
+}
+#meter[value]{
+    animation-name: barAnimation;
+    animation-duration: .9s;
+}
+link{
+    border-radius: 50px;
+}
+body{
+    /* background: linear-gradient(90deg,hsla(180, 100%, 50%, 0.274),hsla(180, 100%, 50%, 0.144),rgba(0, 0, 255, 0),hsla(180, 100%, 50%, 0.034),hsla(180, 100%, 50%, 0.270)), url("artur.jpg"); */
+    background:linear-gradient(90deg,hsla(180, 100%, 50%, 0.274),hsla(180, 100%, 50%, 0.034),rgba(0, 0, 255, 0),hsla(180, 100%, 50%, 0.034),hsla(180, 100%, 50%, 0.270)), url("/project web/pictures/picking bg.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+progress{
+    color:aqua;
+    width: 100%;
+    border-radius: 20px;
+}
+progress::-webkit-progress-bar {
+    border: 0;
+    height: .7vw;
+}
+progress::-webkit-progress-value {
+    background: aqua;
+    border: 0;
+    height: .7vw;
+   
+}
+.logo img{
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    bottom:5%;
+    left: 2%;
+    animation-name: slideright-logo;
+    animation-duration: .8s;
+}
+a:link, a:visited {
+    color: wheat;
+}
+.logo img:hover{
+    filter:brightness(1.3);
+    transform: scale(1.1);
+    transition: .2s;
+}
+.skills .skill:hover{
+    box-shadow: 0px 0px 10px aqua;
+    border: 5px solid rgba(0, 255, 255, 0.836);
+    transform: scale(1.1);filter: brightness(1.1);
+    cursor: pointer;
+}
+.skills{
+    margin-top: 90%;
+    animation-name: slideleft;
+    animation-duration: .8s;
+}
+.container{
+    width: 95%;
+    margin-top: 4%;
+    position: fixed;
+    right: 1px;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* min-width: 1100px; */
+}
+.heroInfo{
+    animation-name: slideright;
+    animation-duration: .8s;
+    width: 20vw;
+    padding: 2vw;
+    line-height: 1.5em;
+    color: whitesmoke;
+}
+.stats{
+    margin-top: 40px;
+}
+hr{
+    opacity: .3;
+    height: .2vw;
+    background-color: white;
+    margin: 1.5vw 0;
+}
+.heroInfo img{
+    height: 3vw;
+    width: 3vw;
+    float: left;
+    margin-bottom: .4vw;
+    margin-right: 1vw;
+    filter:saturate(10);
+}
+h1{
+    padding-top: .6vw;
+}
+.hero{
+    /* width: 300px;
+    height: 450px; */
+    width: 21vw;
+    height: 33vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    box-shadow: 0px 0px 10px aqua;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+}
+.arrow img{
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    width: 8vw;
+    top: 1vw;
+    left: 1vw;
+    filter:brightness(2) contrast(1.1);
+    /* background-color: red; */
+}
+#back:hover{
+    filter: brightness(4.2);
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: .2s;
+}
+.next{
+    color: wheat;
+    font-size: 7vw;
+    font-weight: bold;
+    font-family:  Arial, sans-serif; 
+    text-align: center;
+    margin-top: 160%;
+    position: relative;
+    transform: scaleY(200%);
+}
+.backward{
+    position: relative;
+    left: -11.5vw;    
+}
+.forward{
+    position: relative;
+    right: -11.5vw;    
+}
+.backward:hover{
+    text-shadow: 0 0 10px wheat;
+    cursor: pointer;
+    transition:.2s;
+}
+.forward:hover{
+    text-shadow: 0 0 10px wheat;
+    cursor: pointer;
+    transition:.2s;
+}
+.skill{
+    border-radius: 50%;
+    border: 5px solid aqua;
+    margin-left: .5vw;
+    width: 6.5vw;
+}
+.passDes, .stDes, .ndDes, .rdDes{ /* default display */
+    display: none;
+    position: absolute;
+    width: 32%;
+    border: 1px solid rgba(255, 217, 0, 0.233);
+    padding: 10px 7px;
+    bottom: 110px;
+    color:whitesmoke;
+    font-size: 95%;
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 10px;
+}
+.skillname{
+    font-size: 20px;
+    font-weight: bold;
+    width: 98%;
+    position: absolute;
+    /* background-color: red; */
+    text-align: center;
+    top: -30px;
+    text-shadow: 0 0 10px wheat;
+
+
+}
+/* .stDes{
+    position: absolute;
+    width: 32%;
+    border: 1px solid rgba(255, 217, 0, 0.233);
+    padding: 10px 7px;
+    bottom: 110px;
+    color:whitesmoke;
+    font-size: 95%;
+    background-color: rgba(0, 0, 0, 0.507);
+} */
+.passDes:hover, .stDes:hover, .ndDes:hover, .rdDes:hover{
+    display: block;
+}
+.passive:hover + .passDes, .stskill:hover +.stDes, .ndskill:hover +.ndDes,.rdskill:hover +.rdDes{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+

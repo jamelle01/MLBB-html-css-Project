@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes | MLBB</title>
+    <link rel="icon" href="/project web/pictures/icon.png">    <link rel="stylesheet" href="heroes.css">
+</head>
+<body>
+    <div class="logo" id="logo">
+        <a href="/project web/home page/home.html"><img src="/project web/pictures/mllogo.png" alt=""></a>
+        <a href="/project web/mobile legends/mlbb.html">Mobile Legends</a>
+        <a href="/project web/how to play/how to play.html" >How To Play</a>
+        <a href="/project web/heroes/heroesall.html" style=" text-shadow: 0 0 1.5vw whitesmoke; transform: scale(1.1); filter: brightness(1.1);">Heroes<hr></a>
+        <a href="/project web/credits/credits.html">Credits</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/project web/heroes/heroesall.html" class="all">All</a></li>
+            <li><a href="/project web/heroes/tankheroes.html" class="tank">Tank</a></li>
+            <li><a href="/project web/heroes/fighterheroes.html" class="fighter">Fighter</a></li>
+            <li><a href="/project web/heroes/assassinheroes.html" class="assassin">Assassin</a></li>
+            <li><a href="/project web/heroes/mageheroes.html" class="mage">Mage</a></li>
+            <li><a href="/project web/heroes/marksmanheroes.html" class="marksman">Marksman</a></li>
+            <li><a href="/project web/heroes/supportheroes.html" class="support"  style="border:none;transform:scale(1.1); background-color: rgba(0, 255, 255, 0.671);font-weight: bolder;">Support</a></li>
+        </ul>
+        
+    </nav>  
+    <div class="heroes">
+        <a href="/project web/hero individual/sorts/supports/akai/akai.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/akai.webp');" id="akai">
+                <span> <img title="Tank" src="/project web/hero individual/tank.webp" alt="" class="role"><span class="icon-border">|</span><img title="Support" src="/project web/hero individual/support.webp" class="role" alt=""> Akai</span>
+            </div>
+        </a>
+        <a href="/project web/hero individual/sorts/supports/atlas/atlas.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/atlas.webp');" id="atlas" >
+                <span> <img src="/project web/hero individual/tank.webp" alt="" class="role" title="Tank"><span class="icon-border">|</span><img title="Support" src="/project web/hero individual/support.webp" class="role" alt=""> Atlas</span>
+            </div>
+        </a>
+        <a href="/project web/hero individual/sorts/supports/carmilla/carmilla.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/carmilla.avif'); background-position-x: 50%;" id="carmilla" >
+                <span> <img src="/project web/hero individual/support.webp" title="Support" alt="" class="role"> Carmilla</span>
+            </div>
+        </a>
+        <a href="/project web/hero individual/sorts/supports/diggie/diggie.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/diggie.webp');" id="diggie" >
+                <span> <img src="/project web/hero individual/support.webp" alt="" title="Support" class="role"> Diggie</span>
+            </div>
+        </a>
+        <a href="/project web/hero individual/sorts/supports/estes/estes.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/estes.webp');" id="estes" >
+                <span> <img src="/project web/hero individual/support.webp" title="Support" alt="" class="role"> Estes</span>
+            </div>
+        </a>
+        <a href="/project web/hero individual/sorts/supports/faramis/faramis.html">
+            <div style="background-image: url('/project web/heroes/hero pictures/faramis.png');" id="faramis" >
+                <span> <img src="/project web/hero individual/support.webp" title="Supports" alt="" class="role"><span class="icon-border">|</span><img src="/project web/hero individual/mage.webp" title="Mage" class="role" alt=""> Faramis</span>
+            </div>
+        </a>
+    </div>
+    <script>
+        var mybutton = document.getElementById("logo");
+    
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            mybutton.style.backgroundColor = "rgba(0, 0, 0, 0.87)";
+        } else {
+            mybutton.style.backgroundColor = "";
+        }
+        }
+    </script>
+</body>
+</html>
